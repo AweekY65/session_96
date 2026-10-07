@@ -1,0 +1,15 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc = "/home/lrh4090/.local/bin/solc"
+auto_detect_solc = false
+offline = true
+
+[profile.default.fuzz]
+runs = 512
+
+[profile.default.invariant]
+runs = 64
+depth = 32
+fail_on_revert = false
